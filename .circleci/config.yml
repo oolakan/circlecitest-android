@@ -4,6 +4,8 @@ jobs:
     working_directory: ~/code
     docker:
       - image: circleci/android:api-28
+    artifacts:
+      - /home/ubuntu/CircleCiTestApp/app/build/outputs/apk/
     environment:
       JVM_OPTS: -Xmx3200m
     steps:
